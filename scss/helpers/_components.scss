@@ -26,6 +26,9 @@
 
 .col-3 {
     width: 25%;
+    @include mobile(1024px) {
+        width: 100%;
+    }
 }
 
 .col-5 {

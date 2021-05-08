@@ -10,3 +10,9 @@
 	align-items: center;
 	justify-content: center;
 }
+
+@mixin mobile($width) {
+	@media screen and (max-width: $width) {
+		@content;
+	}
+}

@@ -1,10 +1,10 @@
 @import "./vendors/slick";
 
 @import "./helpers/variable";
+@import "./helpers/mixins";
 @import "./helpers/global";
 @import "./helpers/fonts";
 @import "./helpers/components";
-@import "./helpers/mixins";
 
 @import "./components/header";
 @import "./components/hero";

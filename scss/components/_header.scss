@@ -31,6 +31,9 @@
             }
         }
     }
+    @include mobile(1024px) {
+        display: none;
+    }
 }
 .header {
     &__logo {
@@ -41,6 +44,9 @@
         align-items: center;
         justify-content: flex-end;
         flex-wrap: nowrap !important;
+        @include mobile(1024px) {
+            justify-content: space-between;
+        }
     }
     &__ship {
         font-style: normal;
@@ -50,6 +56,17 @@
         color: $color-white;
         margin-right: 319px;
         white-space: nowrap;
+        @include mobile(1024px) {
+            display: none;
+        }
+    }
+    &__auth {
+        @include mobile(1024px) {
+            display: none;
+        }
+    }
+    @include mobile(1024px) {
+        padding: 10px 0;
     }
 }
 .auth {

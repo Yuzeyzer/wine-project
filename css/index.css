@@ -100,6 +100,12 @@
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
 body {
   margin: 0;
 }
@@ -141,12 +147,14 @@ img {
   width: 50%;
 }
 
-.col-4 {
-  width: 33.33%;
+@media screen and (max-width: 1024px) {
+  .col-6 {
+    width: 100%;
+  }
 }
 
-.col-3 {
-  width: 25%;
+.col-4 {
+  width: 33.33%;
 }
 
 @font-face {
@@ -185,6 +193,12 @@ img {
 
 .col-3 {
   width: 25%;
+}
+
+@media screen and (max-width: 1024px) {
+  .col-3 {
+    width: 100%;
+  }
 }
 
 .col-5 {
@@ -252,6 +266,12 @@ img {
   transform: scale(1);
 }
 
+@media screen and (max-width: 1024px) {
+  .nav {
+    display: none;
+  }
+}
+
 .header__logo {
   margin-right: 45px;
 }
@@ -263,6 +283,12 @@ img {
   flex-wrap: nowrap !important;
 }
 
+@media screen and (max-width: 1024px) {
+  .header__row {
+    justify-content: space-between;
+  }
+}
+
 .header__ship {
   font-style: normal;
   font-weight: normal;
@@ -271,6 +297,24 @@ img {
   color: #fff;
   margin-right: 319px;
   white-space: nowrap;
+}
+
+@media screen and (max-width: 1024px) {
+  .header__ship {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header__auth {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 10px 0;
+  }
 }
 
 .auth__item:nth-child(3) .auth__link {
@@ -309,6 +353,12 @@ img {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1024px) {
+  .hero__content {
+    padding-top: 5vh;
+  }
+}
+
 .hero__suptitle {
   margin: 0;
   font-family: "ChocolateBox";
@@ -317,12 +367,25 @@ img {
   font-size: 24px;
 }
 
+@media screen and (max-width: 1024px) {
+  .hero__suptitle {
+    font-size: 18px;
+  }
+}
+
 .hero__title {
   margin: 0;
   font-family: "ChocolateBox";
   font-style: normal;
   font-weight: normal;
   font-size: 96px;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero__title {
+    margin-top: 15px;
+    font-size: 62px;
+  }
 }
 
 .hero__title span {
@@ -334,6 +397,12 @@ img {
   font-weight: 300;
   font-size: 16px;
   text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero__description {
+    font-size: 14px;
+  }
 }
 
 .hero__link {
@@ -357,9 +426,22 @@ img {
   background-color: #e2b024;
 }
 
+@media screen and (max-width: 1024px) {
+  .hero__link {
+    margin-bottom: 15px;
+  }
+}
+
 .new-wines {
   padding: 220px 0;
   background-color: #18191A;
+}
+
+@media screen and (max-width: 1024px) {
+  .new-wines {
+    padding: 50px 0;
+    text-align: center;
+  }
 }
 
 .new-wines__row {
@@ -417,6 +499,12 @@ img {
   margin-top: -100px;
 }
 
+@media screen and (max-width: 1024px) {
+  .new-wines-item {
+    margin-top: 0;
+  }
+}
+
 .new-wines-item__title {
   font-family: "ChocolateBox";
   font-style: normal;
@@ -454,8 +542,20 @@ img {
   color: #fff;
 }
 
+@media screen and (max-width: 1024px) {
+  .new-wines-item__description {
+    margin: 40px 0 40px;
+  }
+}
+
 .new-wines-item__button.btn-bordered {
   margin-left: 64px;
+}
+
+@media screen and (max-width: 1024px) {
+  .new-wines-item__button.btn-bordered {
+    margin: 20px 0;
+  }
 }
 
 .new-wines-item__img {
@@ -465,11 +565,23 @@ img {
   height: 690px;
 }
 
+@media screen and (max-width: 1024px) {
+  .new-wines-item__img {
+    height: 500px;
+  }
+}
+
 .new-wines-item__img img {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1024px) {
+  .new-wines-item__img img {
+    max-width: 150px;
+  }
 }
 
 .new-wines-item__img::before {
@@ -485,8 +597,21 @@ img {
   z-index: -1;
 }
 
+@media screen and (max-width: 1024px) {
+  .new-wines-item__img::before {
+    width: 200px;
+    height: 200px;
+  }
+}
+
 .products {
   padding: 151px 0 174px;
+}
+
+@media screen and (max-width: 1024px) {
+  .products {
+    padding: 30px 0;
+  }
 }
 
 .products-list {
@@ -496,8 +621,21 @@ img {
   margin: 90px 0;
 }
 
+@media screen and (max-width: 1024px) {
+  .products-list {
+    flex-direction: column;
+    margin: -40px 0 0;
+  }
+}
+
 .products-list__item {
   margin-right: 72px;
+}
+
+@media screen and (max-width: 1024px) {
+  .products-list__item {
+    margin: 20px 0;
+  }
 }
 
 .products-list__item:last-child {
